@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css" integrity="sha256-cKiyvRKpm8RaTdU71Oq2RUVgvfWrdIXjvVdQF2oZ1Y4=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js" integrity="sha256-yQGjQhFs3LtyiN5hhr3k9s9TWZOh/RzCkD3gwwCKlkg=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/hover.css">
+</head>
+
+<style>
+    body{
+        background-color: cadetblue;
+    }
+    .gallery{
+
+        top: 50%;
+        position: fixed;
+        
+    }
+
+
+.gallery img {
+    z-index: 99;
+    background-size: cover;
+    object-fit: cover;
+    
+}
+
+.gallery a {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 4px 6px;
+    border: 2px;
+    border-width: 2px;
+    background: #2098D1;
+    border-color: aliceblue;
+    box-shadow: 0 0 4px -1px #000;
+}
+</style>
+<body>
+   
+    <div class="container-fluid">
+            <div class="gallery">
+                    <a href="../1.jpg" class=" hvr-underline-reveal" data-caption="Image caption">
+                        <img src="../1.jpg" alt="First image">
+                    </a>
+                    <a href="../3.jpg" class="hvr-grow hvr-underline-reveal">
+                        <img src="../3.jpg" alt="Second image">
+                    </a>
+                    ...
+                </div>
+    </div>
+    <script>baguetteBox.run('.gallery');</script>
+</body>
+</html>
